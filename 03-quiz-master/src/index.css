@@ -1,0 +1,297 @@
+/*FUENTES PERSONALIZADAS*/
+@font-face{
+  font-family: 'BebasNeue';
+  src: url(public/fonts/BebasNeue.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'TrebuchetMS';
+  src: url(public/fonts/TrebuchetMS.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*ESTILOS GENERALES*/
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+/* 01 - ESTILOS ENCABEZADO*/
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: black;
+}
+
+.header h1{
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  font-family: 'TrebuchetMS';
+  font-size: 50px;
+  color: #00a0c6;
+  letter-spacing: 1px;
+}
+
+.header img{
+  width: 180px;
+}
+
+/*02 - ESTILOS DESCRIPCION WEB*/
+
+.description{
+  width: 70%;
+  height: auto;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.description p{
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 30px;
+}
+
+/*03 - ESTILOS MENÚ DE NAVEGACIÓN*/
+
+.menu{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+
+  width: 98%;
+  height: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: black;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.menu h2{
+  display: block;
+  margin-right: 20px;
+  font-family: 'TrebuchetMS';
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: #00a0c6;
+}
+
+.menu ul{
+  display: flex;
+}
+
+.menu ul li{
+  padding-top: 1px;
+  padding-right: 20px;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.menu ul li a{
+  display: block;
+  font-family: 'BebasNeue';
+  font-size: 30px;
+  color: #00a0c6;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+.menu ul li a:hover{
+  transform: scale(1.2);
+  color: white;
+}
+
+/* 04 - ESTILOS DEL CONTENIDO PRINCIPAL*/
+
+.content-main{
+  display: flex;
+  justify-content: space-between;
+
+  width: 98%;
+  height: auto;
+  margin: 10px;
+
+  border: 1px solid #ccc;
+}
+
+/* 05 - ESTILOS CONTENEDORES  Default ,HTML, CSS, JavaScript, React, GIT-HUB*/
+.section{
+  width: 50%;
+  height: 500px;
+  margin: 5px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.section .title-default{
+  display: block;
+  margin: 210px auto;
+  text-align: center;
+  font-family: 'TrebuchetMS';
+  font-size: 50px;
+}
+
+.section .title-main{
+  display: block;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-family: 'TrebuchetMS';
+  font-size: 50px;
+  color: #00a0c6;
+  background-color: black;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+/*ESTILOS QUESTIONARIO*/
+
+.form-question{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-question .title-question{
+  display: block;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 33px;
+}
+
+.label-answer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: 5px;
+  margin-bottom: 5px;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.label-answer input[type='radio']{
+  margin-left: 10px;
+}
+
+/* 06 - ESTILOS BARRA LATERAL*/
+
+.asidebar{
+  display: flex;
+  
+
+  width: 25%;
+  height: 500px;
+  margin: 5px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.enter{
+  width: 100%;
+  height: 380px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.enter h4{
+  display: block;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-family: 'TrebuchetMS';
+  font-size: 25px;
+  color: #00a0c6;
+  background-color: black;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/*ESTILOS FORMULARIO DE LA BARRA LATERAL*/
+.select-option{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.question{
+  display: block;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #f8f4f4;
+  border-radius: 10px;
+}
+
+.label-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 10px;
+  font-family: 'TrebuchetMS';
+  font-size: 16px;
+  font-weight: bold;
+}
+
+select{
+  padding: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.select-option h5{
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'TrebuchetMS';
+  font-size: 15px;
+}
+
+.answer-option input{
+  padding: 2px;
+  margin-left: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.enter input[type='submit']{
+  display: block;
+  margin: 5px;
+  padding: 5px;
+  font-weight: bold;
+  background-color: #00a0c6;
+  color: white;
+  transition: all 300ms;
+  border-radius: 10px;
+}
+
+.enter input[type='submit']:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+ 
+/* 07 - ESTILOS PIE DE PÁGINA*/
+
+.footer{
+  height: 200px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 200px;
+  font-family: 'TrebuchetMS';
+  font-size: 40px;
+  color: #00a0c6;
+  background-color: black; 
+}
+
